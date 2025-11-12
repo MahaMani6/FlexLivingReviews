@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { reviewsApi } from '../../services/api';
 import FilterPanel from './FilterPanel';
 import StatsCards from './StatsCards';
@@ -22,7 +22,7 @@ const Dashboard = () => {
     fetchStats();
   }, []);
 
-  const fetchReviews = async () => {
+  const fetchReviews = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
@@ -34,7 +34,7 @@ const Dashboard = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [listingName]);
 
   const fetchStats = async () => {
     try {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback  } from 'react';
 import { reviewsApi } from '../../services/api';
 import { Star, User, Calendar } from 'lucide-react';
 
@@ -10,7 +10,7 @@ const PublicReviewsSection = ({ listingName }) => {
     fetchPublicReviews();
   }, [fetchPublicReviews]);
 
-  const fetchPublicReviews = async () => {
+  const fetchPublicReviews = useCallback(async () => {
     try {
       setLoading(true);
       const response = await reviewsApi.getPublicReviews(listingName);
@@ -20,7 +20,7 @@ const PublicReviewsSection = ({ listingName }) => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [listingName]);
 
   const formatDate = (dateString) => {
     return new Date(dateString).toLocaleDateString('en-US', {
