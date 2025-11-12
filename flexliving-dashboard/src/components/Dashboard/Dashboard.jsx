@@ -15,7 +15,7 @@ const Dashboard = () => {
   // Fetch reviews on component mount and when filters change
   useEffect(() => {
     fetchReviews();
-  }, [filters]);
+  }, [fetchReviews]);
 
   // Fetch stats on component mount
   useEffect(() => {

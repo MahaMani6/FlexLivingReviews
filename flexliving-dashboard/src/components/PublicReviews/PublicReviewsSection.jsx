@@ -8,7 +8,7 @@ const PublicReviewsSection = ({ listingName }) => {
 
   useEffect(() => {
     fetchPublicReviews();
-  }, [listingName]);
+  }, [fetchPublicReviews]);
 
   const fetchPublicReviews = async () => {
     try {
