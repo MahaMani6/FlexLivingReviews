@@ -1,0 +1,272 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\services\\googlereviewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\services\\googlereviewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\services\\hostawayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\services\\hostawayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\migrations\\20251111191938_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\migrations\\20251111191938_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\flexlivingreviews.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\flexlivingreviews.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\services\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\services\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\services\\ihostawayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\services\\ihostawayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\models\\hostawayapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\models\\hostawayapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\models\\reviewcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\models\\reviewcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|c:\\users\\amulu\\source\\repos\\flexlivingreviews\\flexlivingreviews\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDA328C4-E288-4CF5-89B5-AC9C9A86FBE4}|FlexLivingReviews\\FlexLivingReviews.csproj|solutionrelative:flexlivingreviews\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Program.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Program.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Program.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:46:36.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:26:35.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20251111191938_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Migrations\\20251111191938_InitialCreate.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Migrations\\20251111191938_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Migrations\\20251111191938_InitialCreate.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Migrations\\20251111191938_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:19:39.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReviewService.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Services\\ReviewService.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Services\\ReviewService.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Services\\ReviewService.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Services\\ReviewService.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAkwKEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:01:20.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IReviewService.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Services\\IReviewService.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Services\\IReviewService.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Services\\IReviewService.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Services\\IReviewService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:01:01.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HostawayService.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Services\\HostawayService.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Services\\HostawayService.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Services\\HostawayService.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Services\\HostawayService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:00:33.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\appsettings.json",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\appsettings.json",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\appsettings.json",
+              "RelativeToolTip": "FlexLivingReviews\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-11T18:44:58.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAIwNcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:32:30.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GoogleReviewsService.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Services\\GoogleReviewsService.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Services\\GoogleReviewsService.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Services\\GoogleReviewsService.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Services\\GoogleReviewsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T22:46:56.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FlexLivingReviews.csproj",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\FlexLivingReviews.csproj",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\FlexLivingReviews.csproj",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\FlexLivingReviews.csproj",
+              "RelativeToolTip": "FlexLivingReviews\\FlexLivingReviews.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-11T18:44:07.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IHostawayService.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Services\\IHostawayService.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Services\\IHostawayService.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Services\\IHostawayService.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Services\\IHostawayService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T19:00:13.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:44:30.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HostawayApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Models\\HostawayApiResponse.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Models\\HostawayApiResponse.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Models\\HostawayApiResponse.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Models\\HostawayApiResponse.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA5wDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:43:48.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReviewCategory.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Models\\ReviewCategory.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Models\\ReviewCategory.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Models\\ReviewCategory.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Models\\ReviewCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:43:11.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "FlexLivingReviews\\Models\\Review.cs",
+              "ToolTip": "C:\\Users\\amulu\\source\\repos\\FlexLivingReviews\\FlexLivingReviews\\Models\\Review.cs",
+              "RelativeToolTip": "FlexLivingReviews\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:42:16.892Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
