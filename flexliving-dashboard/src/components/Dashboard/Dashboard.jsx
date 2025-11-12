@@ -1,142 +1,170 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { reviewsApi } from '../../services/api';
+import ReviewCard from './ReviewCard';
 import FilterPanel from './FilterPanel';
 import StatsCards from './StatsCards';
-import ReviewCard from './ReviewCard';
-import { Loader } from 'lucide-react';
 
 const Dashboard = () => {
   const [reviews, setReviews] = useState([]);
+  const [filteredReviews, setFilteredReviews] = useState([]);
   const [stats, setStats] = useState(null);
-  const [filters, setFilters] = useState({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [filters, setFilters] = useState({
+    listing: '',
+    channel: '',
+    minRating: '',
+    startDate: '',
+    endDate: ''
+  });
 
-  // Fetch reviews on component mount and when filters change
+  // Fetch reviews from API
+  const fetchReviews = useCallback(async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const response = await reviewsApi.fetchHostawayReviews();
+      const reviewsData = response.data || response;
+      setReviews(reviewsData);
+      setFilteredReviews(reviewsData);
+      
+      const statsData = await reviewsApi.getStats();
+      setStats(statsData.data || statsData);
+    } catch (err) {
+      setError('Failed to load reviews. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  // Apply filters whenever filters or reviews change
+  useEffect(() => {
+    if (!reviews.length) return;
+
+    let filtered = [...reviews];
+
+    // Filter by listing name
+    if (filters.listing) {
+      filtered = filtered.filter(review => 
+        review.listingName &&  // ✅ CORRECT: Using review.listingName
+        review.listingName.toLowerCase().includes(filters.listing.toLowerCase())
+      );
+    }
+
+    // Filter by channel
+    if (filters.channel) {
+      filtered = filtered.filter(review => 
+        review.channel &&
+        review.channel.toLowerCase() === filters.channel.toLowerCase()
+      );
+    }
+
+    // Filter by minimum rating
+    if (filters.minRating) {
+      const minRating = parseInt(filters.minRating, 10);
+      filtered = filtered.filter(review => 
+        review.overallRating && review.overallRating >= minRating
+      );
+    }
+
+    // Filter by date range
+    if (filters.startDate) {
+      filtered = filtered.filter(review => 
+        new Date(review.submittedAt) >= new Date(filters.startDate)
+      );
+    }
+
+    if (filters.endDate) {
+      filtered = filtered.filter(review => 
+        new Date(review.submittedAt) <= new Date(filters.endDate)
+      );
+    }
+
+    setFilteredReviews(filtered);
+  }, [filters, reviews]);
+
+  // Fetch reviews on component mount
   useEffect(() => {
     fetchReviews();
   }, [fetchReviews]);
 
-  // Fetch stats on component mount
-  useEffect(() => {
-    fetchStats();
-  }, []);
-
-  const fetchReviews = useCallback(async () => {
+  // Handle approve/disapprove action
+  const handleApprove = async (id, approved) => {
     try {
-      setLoading(true);
-      setError(null);
-      const response = await reviewsApi.getAllReviews(filters);
-      setReviews(response.data || []);
-    } catch (err) {
-      setError('Failed to fetch reviews');
-      console.error(err);
-    } finally {
-      setLoading(false);
-    }
-  }, [listingName]);
-
-  const fetchStats = async () => {
-    try {
-      const response = await reviewsApi.getStats();
-      setStats(response.data);
-    } catch (err) {
-      console.error('Failed to fetch stats', err);
-    }
-  };
-
-  const handleSync = async () => {
-    try {
-      setLoading(true);
-      await reviewsApi.syncReviews();
-      await fetchReviews();
-      await fetchStats();
-      alert('Reviews synced successfully!');
-    } catch (err) {
-      alert('Failed to sync reviews');
-      console.error(err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleApprove = async (reviewId, approved) => {
-    try {
-      await reviewsApi.approveReview(reviewId, approved);
-      // Update the review in state
+      await reviewsApi.approveReview(id, approved);
+      
+      // Update local state optimistically
       setReviews(prevReviews =>
         prevReviews.map(review =>
-          review.id === reviewId
-            ? { ...review, isApprovedForWebsite: approved }
-            : review
+          review.id === id ? { ...review, isApprovedForWebsite: approved } : review
         )
       );
-      await fetchStats();
+      
+      setFilteredReviews(prevFiltered =>
+        prevFiltered.map(review =>
+          review.id === id ? { ...review, isApprovedForWebsite: approved } : review
+        )
+      );
     } catch (err) {
-      alert('Failed to update review approval status');
-      console.error(err);
+      setError('Failed to update review status. Please try again.');
     }
   };
 
+  // Handle filter changes
+  const handleFilterChange = (newFilters) => {
+    setFilters(newFilters);
+  };
+
+  // Handle sync button click
+  const handleSync = async () => {
+    await fetchReviews();
+  };
+
+  if (loading && !reviews.length) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="text-xl">Loading reviews...</div>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-gray-100">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-gray-900">Reviews Dashboard</h1>
-          <p className="text-gray-600 mt-1">Manage and approve guest reviews for Flex Living properties</p>
+    <div className="container mx-auto px-4 py-8">
+      {error && (
+        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+          {error}
         </div>
-      </header>
+      )}
 
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 py-8">
-        {/* Statistics */}
-        <StatsCards stats={stats} />
-
-        {/* Filters */}
-        <FilterPanel
-          filters={filters}
-          setFilters={setFilters}
-          onSync={handleSync}
-          loading={loading}
-        />
-
-        {/* Error Message */}
-        {error && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-6">
-            {error}
+      {stats && <StatsCards stats={stats} />}
+      
+      <FilterPanel 
+        filters={filters}
+        onFilterChange={handleFilterChange}
+        onSync={handleSync}
+      />
+      
+      <div className="mt-8">
+        <h2 className="text-2xl font-bold mb-4">
+          Reviews ({filteredReviews.length})
+        </h2>
+        
+        {filteredReviews.length === 0 ? (
+          <div className="text-center py-12 text-gray-500">
+            No reviews found matching your filters.
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredReviews.map((review) => (
+              <ReviewCard 
+                key={review.id}
+                review={review}
+                onApprove={handleApprove}
+              />
+            ))}
           </div>
         )}
-
-        {/* Reviews List */}
-        <div className="mb-6">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">
-            Reviews ({reviews.length})
-          </h2>
-
-          {loading ? (
-            <div className="flex items-center justify-center py-12">
-              <Loader className="w-8 h-8 animate-spin text-blue-600" />
-              <span className="ml-3 text-gray-600">Loading reviews...</span>
-            </div>
-          ) : reviews.length === 0 ? (
-            <div className="bg-white rounded-lg shadow-md p-12 text-center">
-              <p className="text-gray-500 text-lg">No reviews found</p>
-              <p className="text-gray-400 mt-2">Try adjusting your filters or sync reviews from Hostaway</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 gap-6">
-              {reviews.map(review => (
-                <ReviewCard
-                  key={review.id}
-                  review={review}
-                  onApprove={handleApprove}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-      </main>
+      </div>
     </div>
   );
 };
