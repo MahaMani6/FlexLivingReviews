@@ -1,8 +1,10 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL 
-  ? `${process.env.REACT_APP_API_URL}/api`
-  : 'http://localhost:7002/api';
+//const API_BASE_URL = process.env.REACT_APP_API_URL 
+  //? `${process.env.REACT_APP_API_URL}/api`
+  //: 'http://localhost:7002/api';
+
+const API_BASE_URL = 'https://flexliving-backend-ecehgkgsc2cbfpc6.westeurope-01.azurewebsites.net/api';
 
 console.log('=== API Configuration ===');
 console.log('REACT_APP_API_URL:', process.env.REACT_APP_API_URL);
