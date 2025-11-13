@@ -46,7 +46,7 @@ const Dashboard = () => {
     // Filter by listing name
     if (filters.listing) {
       filtered = filtered.filter(review => 
-        review.listingName &&  // ✅ CORRECT: Using review.listingName
+        review.listingName &&
         review.listingName.toLowerCase().includes(filters.listing.toLowerCase())
       );
     }
@@ -110,11 +110,6 @@ const Dashboard = () => {
     }
   };
 
-  // Handle filter changes
-  const handleFilterChange = (newFilters) => {
-    setFilters(newFilters);
-  };
-
   // Handle sync button click
   const handleSync = async () => {
     await fetchReviews();
@@ -140,8 +135,9 @@ const Dashboard = () => {
       
       <FilterPanel 
         filters={filters}
-        onFilterChange={handleFilterChange}
+        setFilters={setFilters}
         onSync={handleSync}
+        loading={loading}
       />
       
       <div className="mt-8">

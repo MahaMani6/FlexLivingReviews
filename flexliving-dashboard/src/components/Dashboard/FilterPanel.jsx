@@ -1,8 +1,17 @@
 import React from 'react';
 import { Search, Filter, RefreshCw } from 'lucide-react';
 
-const FilterPanel = ({ filters, setFilters, onSync, loading }) => {
+const FilterPanel = ({ 
+  filters = {}, 
+  setFilters = () => console.warn('setFilters function not provided'), 
+  onSync = () => console.warn('onSync function not provided'), 
+  loading = false 
+}) => {
   const handleFilterChange = (key, value) => {
+    if (typeof setFilters !== 'function') {
+      console.error('setFilters is not a function');
+      return;
+    }
     setFilters(prev => ({ ...prev, [key]: value }));
   };
 
