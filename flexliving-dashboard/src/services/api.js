@@ -4,6 +4,11 @@ const API_BASE_URL = process.env.REACT_APP_API_URL
   ? `${process.env.REACT_APP_API_URL}/api`
   : 'http://localhost:7002/api';
 
+console.log('=== API Configuration ===');
+console.log('REACT_APP_API_URL:', process.env.REACT_APP_API_URL);
+console.log('API_BASE_URL:', API_BASE_URL);
+console.log('========================');
+
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
